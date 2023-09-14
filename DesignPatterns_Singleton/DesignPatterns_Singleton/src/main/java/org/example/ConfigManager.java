@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ConfigManager {
     private static ConfigManager instance = new ConfigManager();
-    private Map<String, Object> settings = new HashMap<>();
+    private Map<String, Usuario> settings = new HashMap<>();
 
     private ConfigManager() {
     }
@@ -14,8 +14,8 @@ public class ConfigManager {
         return instance;
     }
 
-    public void set(String key, Object value) {
-        settings.put(key, value);
+    public void set(String key, Usuario usuario) {
+        settings.put(key, usuario);
     }
 
     public Object get (String key) {

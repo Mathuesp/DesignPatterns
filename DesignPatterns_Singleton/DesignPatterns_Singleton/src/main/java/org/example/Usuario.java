@@ -1,24 +1,19 @@
 package org.example;
 
+import lombok.Data;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Data
 public class Usuario {
-    private static Usuario instance = new Usuario();
-    private Map<String, Object> settings = new HashMap<>();
+    private String login;
+    private String nome;
+    private String senha;
 
-    private Usuario() {
-    }
-
-    public static Usuario getInstance() {
-        return instance;
-    }
-
-    public void set(String key, Object value) {
-        settings.put(key, value);
-    }
-
-    public Object get (String key) {
-        return settings.get(key);
+    public Usuario(String login, String nome, String senha) {
+        this.login = login;
+        this.nome = nome;
+        this.senha = senha;
     }
 }
