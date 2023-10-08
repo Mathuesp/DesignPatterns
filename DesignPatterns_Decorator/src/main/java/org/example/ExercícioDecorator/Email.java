@@ -1,4 +1,4 @@
-package ExercícioDecorator;
+package org.example.ExercícioDecorator;
 
 public class Email implements Notifier {
     private Notifier notifier;

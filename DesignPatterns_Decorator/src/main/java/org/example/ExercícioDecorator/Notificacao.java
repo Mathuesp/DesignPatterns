@@ -1,4 +1,4 @@
-package ExercícioDecorator;
+package org.example.ExercícioDecorator;
 
 public class Notificacao implements Notifier {
     @Override

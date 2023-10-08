@@ -1,6 +1,6 @@
 package org.example;
 
-import ExercícioDecorator.*;
+import org.example.ExercícioDecorator.*;
 
 public class Main {
     public static void main(String[] args) {
