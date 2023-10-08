@@ -7,7 +7,10 @@ import java.util.Map;
 public class AngusViewEngine implements HamburgerEngine {
 
     @Override
-    public String render(String[] hamburger, Map<String, Object> context) {
-        return hamburger.toString();
+    public String render(String viewName, Map<String, Object> context){
+        return "Hamburguer Angus" +
+                "\nCarne Angus" +
+                "\nQueijo Cheddar" +
+                "\nMolho Especial";
     }
 }
